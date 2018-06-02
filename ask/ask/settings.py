@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'ask.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -87,7 +87,6 @@ DATABASES = {
     }
 }
 """
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -98,6 +97,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+"""
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
