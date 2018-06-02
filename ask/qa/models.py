@@ -22,7 +22,7 @@ class Question(models.Model):
     added_at = models.DateField(blank=True, auto_now_add=True)
     rating = models.IntegerField(default=0)
     author = models.ForeignKey(django.contrib.auth.models.User)
-    likes = models.ManyToManyField(django.contrib.auth.models.User)
+    likes = models.ManyToManyRel(django.contrib.auth.models.User)
 
     def __str__(self):
         return self.title
