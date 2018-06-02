@@ -17,10 +17,10 @@ from django.conf.urls import include, url
 from qa import urls
 
 urlpatterns = [
-    url(r'^$', include(urls)),
-    url(r'^login/$', include(urls)),
+    url(r'^', include(urls)),
+    url(r'^login/', include(urls)),
     url(r'^signup/.*', include(urls)),
-    url(r'^question/(?P<id>[\d]+)/$', include(urls)),
+    url(r'^question/(?P<id>[\d]+)/', include(urls)),
     url(r'^ask/.*', include(urls)),
     url(r'^popular/.*', include(urls)),
     url(r'^new/.*', include(urls)),
