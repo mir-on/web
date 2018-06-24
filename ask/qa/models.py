@@ -27,6 +27,12 @@ class Question(models.Model):
     def __str__(self):
         return self.title
 
+    def get_url(self):
+        pass
+
+    def __unicode__(self):
+        return self.title
+
 
 class Answer(models.Model):
     text = models.TextField()
